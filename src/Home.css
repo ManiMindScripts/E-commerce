@@ -1,0 +1,209 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+  
+  }
+  
+  .homepage {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./component/assets/dark-gradient.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 13px;
+    margin-right: 13px;
+    /* background: rgba(0, 0, 0, 0.8); */
+  }
+  
+  .contact-info span {
+    margin-right: 15px;
+  }
+  
+  .social-links a {
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #ffc107;
+  }
+  
+  /* Navbar Section */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    /* position: fixed; */
+    margin-top: 20px;
+    height: 13vh;
+    border-radius: 20px;
+    margin: 13px 13px;
+    
+   
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: white;
+    color: black;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 12vw;
+    height: 25vh;
+  }
+  .nav-links .dropdown-menu-an {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: white;
+    color: black;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+   width: 8vw;
+  }
+  .dropdown-menu-an li {
+    margin-left: 12px;
+  }
+  
+  .dropdown-menu li {
+    margin-left: 10px;
+  }
+  
+  .nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .nav-links .dropdown:hover .dropdown-menu-an {
+    display: block;
+  }
+  .login-btn {
+    background: #ffc107;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .search-bar button {
+    background: #ffc107;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .hero h3{
+    margin-top: 15px;
+    font-size: 1.15rem;
+  }
+  .animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    width: max-content;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .cursor {
+    display: inline-block;
+    background: #ffc107;
+    width: 2px;
+    height: 1.2rem;
+    margin-left: 5px;
+    animation: blink 0.7s steps(2, start) finite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  
+    from {
+      background: transparent;
+    }
+    to {
+      background: #ffc107;
+    }
+  }
+  
+  /* Keyframes for Animation */
+ /* Keyframes for Animation */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
