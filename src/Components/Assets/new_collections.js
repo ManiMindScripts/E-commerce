@@ -50,20 +50,20 @@ let new_collections = [
     new_price: 85.0,
     old_price: 120.5,
   },
-  {
-    id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    image: p7_img,
-    new_price: 60.0,
-    old_price: 100.5,
-  },
-  {
-    id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    image: p8_img,
-    new_price: 100.0,
-    old_price: 150.0,
-  },
+  // {
+  //   id: 17,
+  //   name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+  //   image: p7_img,
+  //   new_price: 60.0,
+  //   old_price: 100.5,
+  // },
+  // {
+  //   id: 28,
+  //   name: "Boys Orange Colourblocked Hooded Sweatshirt",
+  //   image: p8_img,
+  //   new_price: 100.0,
+  //   old_price: 150.0,
+  // },
 ];
 
 export default new_collections;
