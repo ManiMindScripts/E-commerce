@@ -28,6 +28,7 @@
 .footer-icons{
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 .footer-container{
     padding: 10px;

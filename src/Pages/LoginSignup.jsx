@@ -19,7 +19,6 @@ const LoginSignup = () => {
 
         </div>
       </div>
-
     </div>
   )
 }
