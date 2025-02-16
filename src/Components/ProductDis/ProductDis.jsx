@@ -7,7 +7,7 @@ const ProductDis = (props) => {
     const { product } = props;
     return (
         <div className='product-dis'>
-            <div className='productdispvay-left'>
+            <div className='productdispay-left'>
                 <div className='productdisplay-img'>
                     <img src={product.image} alt='error' />
                     <img src={product.image} alt='error' />
@@ -30,13 +30,13 @@ const ProductDis = (props) => {
                 </div>
                 <div className='productdisplay-right-prices'>
                     <div className='productdisplay-right-prices-old'>${product.old_price}</div>
-                    <div className='product_right-prices-new'>${product.new_price}</div>
+                    <div className='product-right-prices-new'>${product.new_price}</div>
                 </div>
                 <div className='product-desc'>
                     A leightweight, pullover Shirt, close-fiiting.
                 </div>
                 <div className='product-size'><h1>Select Size</h1>
-                    <div className='product-size'>
+                    <div className='product-sizes'>
                         <div>S</div>
                         <div>M</div>
                         <div>L</div>
@@ -45,8 +45,8 @@ const ProductDis = (props) => {
                     </div>
                 </div>
                 <button>ADD TO CART</button>
-                <p className='product-right-category'><span>Category</span>Women , T-shirt , Crop Top </p>
-                <p className='product-right-category'><span>Tags</span>Modren , Latest </p>
+                <p className='product-right-category'><span>Category:</span>Women , T-shirt , Crop Top </p>
+                <p className='product-right-category'><span>Tags:</span>Modren , Latest </p>
                
             </div>
 
