@@ -1,10 +1,60 @@
-.bread{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #5e5e5e;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: capitalize;
-    margin: 60px 169px;
+.bread {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 60px 169px;
+  line-height: 1.4;
+}
+/* ========== Responsive Media Queries ========== */
+
+/* ≤ 1200px */
+@media (max-width: 1200px) {
+  .bread {
+    margin: 50px 120px;
+  }
+}
+
+/* ≤ 992px */
+@media (max-width: 992px) {
+  .bread {
+    margin: 40px 80px;
+    font-size: 15px;
+  }
+  .bread img{
+  width: 12px;
+  
+}
+}
+
+/* ≤ 768px */
+@media (max-width: 768px) {
+  .bread {
+    margin: 30px 40px;
+    font-size: 14px;
+    gap: 6px;
+  }
+   .bread img{
+  width: 10px;
+  
+}
+}
+
+/* ≤ 600px */
+@media (max-width: 600px) {
+  .bread {
+    margin: 20px 20px;
+    font-size: 13px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .bread img {
+    width: 8px; 
+  }
 }

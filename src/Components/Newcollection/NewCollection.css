@@ -1,26 +1,88 @@
-.NewCollection{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 80px;
-    /* height: 90vw; */
+.NewCollection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-.NewCollection h1{
-    font-size: 50px;
-    font-weight: 600;
-    color: #171717;
-    margin-top: 10px;
+
+.NewCollection h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #171717;
+  margin-top: 10px;
+  text-align: center;
 }
-.NewCollection hr{
-    border-radius: 10px;
-    width: 200px;
-    height: 6px;
-    background: #252525;  
-}  
-.Collections{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-top: 50px;
-    gap: 30px;
+
+.NewCollection hr {
+  border-radius: 10px;
+  width: 200px;
+  height: 6px;
+  background: #252525;
+}
+
+/* Grid section */
+.Collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* =========== RESPONSIVE BREAKPOINTS =========== */
+
+/* ≤ 1200px */
+@media (max-width: 1200px) {
+  .Collections {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .NewCollection h1 {
+    font-size: 44px;
+  }
+}
+
+/* ≤ 992px */
+@media (max-width: 992px) {
+  .Collections {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .NewCollection h1 {
+    font-size: 40px;
+  }
+}
+
+/* ≤ 768px */
+@media (max-width: 768px) {
+  .Collections {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 18px;
+  }
+
+  .NewCollection h1 {
+    font-size: 36px;
+  }
+}
+
+/* ≤ 600px */
+@media (max-width: 600px) {
+  .NewCollection h1 {
+    font-size: 32px;
+  }
+
+  .Collections {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .NewCollection hr {
+    width: 150px;
+  }
 }

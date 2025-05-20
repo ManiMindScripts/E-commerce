@@ -1,45 +1,166 @@
-.offer{
-    width: 65%;
-    height: 60vh;
-    display: flex;
-    margin: auto;
-    padding: 0px 14px;
-    margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff, #e1ffaf22 60%);
-    margin-top: 40px;
+.offer {
+  width: 65%;
+  height: 60vh;
+  display: flex;
+  margin: 40px auto 150px auto;
+  padding: 0 14px;
+  background: linear-gradient(180deg, #fde1ff, #e1ffaf22 60%);
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.offer-eft{
-    flex: 1;
-    display: flex;
+
+.offer-eft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.offer-eft h1 {
+  color: rgb(24, 23, 23);
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.offer-eft p {
+  color: rgb(24, 23, 23);
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.offer-eft button {
+  width: 282px;
+  height: 69px;
+  border-radius: 35px;
+  background: #ff4141;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.offer-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
+.offer-right img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+/* =========== RESPONSIVE BREAKPOINTS =========== */
+
+/* ≤ 1200px */
+@media (max-width: 1200px) {
+  .offer {
+    width: 85%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .offer-eft h1 {
+    font-size: 60px;
+  }
+
+  .offer-eft p {
+    font-size: 20px;
+  }
+
+  .offer-eft button {
+    width: 240px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .offer-right img {
+    max-width: 300px;
+  }
+}
+
+/* ≤ 992px */
+@media (max-width: 992px) {
+  .offer {
     flex-direction: column;
-    justify-content: center;
-}
-.offer-eft h1{
-    color: rgb(24, 23, 23);
-    font-size: 80px;
-    font-weight: 600;
-}
-.offer-eft p{
-    color: rgb(24, 23, 23);
-    font-size: 22px;
-    font-weight: 600;
-}
-.offer-eft button{
- width: 282px;
- height: 69px;
- border-radius: 35px;
- background: #ff4141;
- cursor: pointer;
- color: white;
- border: none;
- font-size: 22px;
- font-weight: 500;
- margin-top: 30px;
-}
-.offer-right{
-    flex: 1;
-    display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-top: 50px;
+    text-align: center;
+    gap: 30px;
+    height: auto;
+  }
+
+  .offer-eft h1 {
+    font-size: 48px;
+  }
+
+  .offer-right {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .offer-right img {
+    max-width: 300px;
+  }
+}
+
+/* ≤ 768px */
+@media (max-width: 768px) {
+  .offer {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .offer-eft h1 {
+    font-size: 40px;
+  }
+
+  .offer-eft p {
+    font-size: 18px;
+  }
+
+  .offer-eft button {
+    width: 200px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .offer-right img {
+    max-width: 250px;
+  }
+}
+
+/* ≤ 600px */
+@media (max-width: 600px) {
+  .offer {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .offer-eft h1 {
+    font-size: 32px;
+  }
+
+  .offer-eft p {
+    font-size: 16px;
+  }
+
+  .offer-eft button {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .offer-right img {
+    max-width: 200px;
+  }
 }
